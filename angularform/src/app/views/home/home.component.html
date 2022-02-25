@@ -1,0 +1,28 @@
+<section class="banner">
+</section>
+<section class="login">
+    <div class="login-principal">
+        <h3>Login</h3>
+        <form #userForm="ngForm" (ngSubmit)="onSubmit()">
+            <p><label for="email">E-mail:&emsp;&emsp;&emsp;&emsp;</label>
+            <input type="email" id="email" name="email" [(ngModel)] = "userModel.email"></p>
+            <p><label for="senha">Senha:&emsp;&emsp;&emsp;&emsp;</label>
+            <input type="password" id="senha" name="senha" [(ngModel)] = "userModel.senha"></p>
+
+            <p><button type="submit">Enviar</button></p>
+        </form>
+    </div>
+</section>
+<footer>
+    <div class="contato">
+        <h2>Contato</h2>
+            <p><img src="assets/img/email.png" height="78" width="78" alt="E-mail">E-mail: gamemania@gmail.com</p>
+            <p><img src="assets/img/telefone.png" height="68" width="64" alt="Telefone">Telefone: 21 3174-1802</p>
+    </div>
+    <div class="redes-sociais">
+                <h2>Redes Sociais</h2>
+                <a href="#"><img src="assets/img/face.png" alt="Logo do Facebook"></a>
+                <a href="#"><img src="assets/img/insta.png" alt="Logo do Instagram"></a>
+    </div>
+</footer>
+
